@@ -1,0 +1,60 @@
+Setting up Decred Wallet for Testnet
+
+Testnet Binaries available here:
+https://github.com/decred/dcrd/releases/tag/v0.0
+
+*Turning off anti-virus recomended*
+*Run files as admin*
+*Hold down the shift key and right click open white space of current directory to have the option to open a command prompt in current directory*
+
+
+Setting up Wallet:
+
+Command Prompt Window 1
+1)dcrd --testnet -u user -P pass 
+	- Run dcrd. Create a unique username and password. Leave this command prompt window running.â€‹
+	- This creates the decred daemon on the current PC and begins downloading the blockchain.
+	- Leave this window running.
+
+Command Prompt Window 2
+2)dcrwallet --create
+	- Will prompt user to enter a seed. (Enter a seed if you have one)
+	- Will prompt user to enter a public and private passphrase. This is the wallet passphrase. While typing password the line will appear blank.
+	- A passphrase does not have to created at this part.
+		
+3)dcrwallet -u user -P pass --walletpass publicpassphrase --dcrdusername=user --dcrdpassword=pass
+	- Replace user(-u user) with a newly created username.
+	- Replace pass(-P pass) with a newly created password.
+	- If a wallet passphrase was created on step 2, enter the public passphrase replacing publicpassphrase(--walletpass publicpassphrase).
+	- Replace user(--dcrdusername=user) with the username created in step 1.
+	- Replace pass(--dcrdpassword=pass) with the password created in step 1.
+
+4)dcrctl --testnet -u user -P pass --wallet getnewaddress 
+	- getnewaddress creates a new address in the wallet to recieve coins.
+	- Save the address.
+	- Replace user with username created in step 3.
+	- Replace pass with password created in step 3.
+	
+5)dcrctl --testnet -u user -P pass --wallet publicpassphrase test 120
+	- To send coins the wallet must be unlocked using the public key public passphrase created in step 2.
+	- 120 is the amount of the seconds the wallet will be unlocked. Max time is 300 seconds or 5 minutes.
+	- Replace user with username created in step 3.
+	- Replace pass with password created in step 3.
+	
+6)dcrctl --testnet -u user -P pass --wallet sendtoaddress TseXaMpLeadDreSS 10
+	- This command will send coins to the specified address.
+	- Replace TseXaMpLeadDreSS with the address you would like the coins to go to.
+	- Replace 10 with the amount of coins you would like to send.
+	- Replace user with username created in step 3.
+	- Replace pass with password created in step 3.
+	
+7)dcrctl --testnet -u user -P pass --wallet listtransactions
+	- This command with list all out going and incoming transactions.
+	- Replace user with username created in step 3.
+	- Replace pass with password created in step 3.
+	
+8)dcrctl --testnet -u user -P pass --wallet getbalance 
+	- This command with list the current balance of coins in the wallet.
+	- Replace user with username created in step 3.
+	- Replace pass with password created in step 3.
+	
