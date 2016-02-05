@@ -3,7 +3,7 @@ Setting up Decred Wallet for Testnet
 Testnet Binaries available here:
 https://github.com/decred/dcrd/releases/tag/v0.0
 
-*Turning off anti-virus recomended*
+*Turning off anti-virus recommended*
 *Run files as admin*
 *Hold down the shift key and right click open white space of current directory to have the option to open a command prompt in current directory*
 
