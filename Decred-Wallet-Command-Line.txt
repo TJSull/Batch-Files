@@ -58,3 +58,4 @@ Command Prompt Window 2
 	- Replace user with username created in step 3.
 	- Replace pass with password created in step 3.
 	
+TJS - Copyright 2016
