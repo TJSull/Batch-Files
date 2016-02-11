@@ -29,6 +29,7 @@ Command Prompt Window 2
 - Replace user(--dcrdusername=user) with the username created in step 1.
 - Replace pass(--dcrdpassword=pass) with the password created in step 1.
 
+Command Prompt Window 3
 4)dcrctl --testnet -u user -P pass --wallet getnewaddress 
 - getnewaddress creates a new address in the wallet to recieve coins.
 - Save the address.
