@@ -11,7 +11,7 @@ Windows based batch scripts geared toward crypto-currency mining.
 
 
 
-To Do - 2.15.2016
+To Do -
 - Read and take input from a user to configure mining pool, ports, usernames, and passwords.
 - Read and take input from a user to configure gpu options such as fan speed.
 - Develop a batch file to perform routine system tasks such as clean internet history and schedule a shutdown time.
